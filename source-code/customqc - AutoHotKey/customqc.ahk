@@ -34,6 +34,14 @@ Gui, MyGui:Add, Text,, file and add as many chats as you'd like. When you activa
 Gui, MyGui:Add, Text,, in game, a random quickchat from the text file will be shown!
 Gui, MyGui:Add, Text,, Note: This is a macro so only PC players will be able to see custom quickchats.
 Gui, MyGui:Font, s12 bold
+Gui, MyGui:Add, Text,, Opening/Closing the Macro
+Gui, MyGui:Font, s11 normal
+Gui, MyGui:Add, Text,, Start customqc.exe to run the macro (it's running now). To exit the macro,
+Gui, MyGui:Add, Text,, right-click it's notification icon on the bottom right of the screen.
+Gui, MyGui:Add, Text,, Quickchats are only sent while Rocket League is in focus so to keep the
+Gui, MyGui:Add, Text,, macro running in the background, create a shortcut to customqc.exe and add
+Gui, MyGui:Add, Text,, it to the startup folder.
+Gui, MyGui:Font, s12 bold
 Gui, MyGui:Add, Text,, How To Use
 Gui, MyGui:Font, s11 normal
 Gui, MyGui:Add, Text,, Pressing Ctrl+Shift+q will show/hide this help window.
@@ -41,14 +49,6 @@ Gui, MyGui:Add, Text,, Pressing Ctrl+`` (the key left of 1) will open the quickc
 Gui, MyGui:Add, Text,, Pressing `` in game will show on screen display similar to pressing keys 1-4
 Gui, MyGui:Add, Text,, in Rocket League. Then press keys 1-8 to send a custom quickchat.
 Gui, MyGui:Add, Text,, To send a random quickchat from the text file, click 'r' afterwards.
-Gui, MyGui:Font, s12 bold
-Gui, MyGui:Add, Text,, Opening/Closing the Macro
-Gui, MyGui:Font, s11 normal
-Gui, MyGui:Add, Text,, Start customqc.exe to run the macro (it's running now). To exit the macro,
-Gui, MyGui:Add, Text,, right-click it's notification icon on the bottom right of the screen.
-Gui, MyGui:Add, Text,, Quickchats are only sent while Rocket League is in focus, so to keep the
-Gui, MyGui:Add, Text,, macro running in the background, create a shortcut to customqc.exe and add
-Gui, MyGui:Add, Text,, it to the startup folder.
 Gui, MyGui:Font, s11 italics
 Gui, MyGui:Add, Text,, Icon from https://icons8.com
 GuiToggle := 0
