@@ -13,7 +13,7 @@ Start customqc.exe to run the macro. To exit the macro, right-click it's notific
 ## How To Use
 
 Pressing Ctrl+Shift+q will show/hide this help window.
-Pressing Ctrl+` (the key left of 1) will open the quickchat editor.
-Pressing ` in game will show on screen display similar to pressing keys 1-4 in Rocket League. Then press keys 1-8 to send a custom quickchat. To send a random quickchat from the text file, click 'r' afterwards.
+Pressing Ctrl+\` (the key left of 1) will open the quickchat editor.
+Pressing \` in game will show on screen display similar to pressing keys 1-4 in Rocket League. Then press keys 1-8 to send a custom quickchat. To send a random quickchat from the text file, click 'r' afterwards.
 
 *Icon provided by https://icons8.com*
