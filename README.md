@@ -1,6 +1,7 @@
 # Rocket League Custom Quickchat v1.4
 
 Send your own custom quickchats in Rocket League on PC!
+Note: Currently in the process of being updated to v1.5.
 
 ## About
 
