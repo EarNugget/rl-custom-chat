@@ -18,6 +18,5 @@ Pressing Ctrl+\` (the key left of 1) will open the quickchat editor.
 Pressing \` in game will show on screen display similar to pressing keys 1-4 in Rocket League. Then press keys 1-8 to send a custom quickchat. To send a random quickchat from the text file, click 'r' afterwards.
 
 Friend me in Rocket League @EarNugget!
-\- Nick
 
 *Icon provided by https://icons8.com*
