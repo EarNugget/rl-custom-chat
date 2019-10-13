@@ -2,8 +2,6 @@
 
 Send your own custom quickchats in Rocket League on PC!
 
-Note: Currently in the process of being updated to v1.5.
-
 ## About
 
 Enjoy 8 new quickchats for Rocket League that are completely customizable. Decided to change a quickchat? Just use a hotkey to open the editor. And that's not all. Set your Rocket League video settings to Borderless and get an On Screen Display showing your quickchats. Open the CustomList text files and add as many chats as you'd like. When you activate Custom Quickchat in game, a random quickchat from the text file will be shown! Note: This is a macro so only PC players will be able to see custom quickchats.
