@@ -62,14 +62,6 @@ Public Class Form1
             WriteINI(File, "CustomQuickChats", "cqc8", TextBox5.Text)
             If Not CheckBox5.Checked = True Then WriteINI(File, "CustomQuickChats", "cqc8_TeamOnly", "false") Else WriteINI(File, "CustomQuickChats", "cqc8_TeamOnly", "true")
         End If
-        Label3.Text = ReadINI(File, "CustomQuickChats", "cqc1")
-        Label4.Text = ReadINI(File, "CustomQuickChats", "cqc2")
-        Label7.Text = ReadINI(File, "CustomQuickChats", "cqc3")
-        Label8.Text = ReadINI(File, "CustomQuickChats", "cqc4")
-        Label17.Text = ReadINI(File, "CustomQuickChats", "cqc5")
-        Label18.Text = ReadINI(File, "CustomQuickChats", "cqc6")
-        Label13.Text = ReadINI(File, "CustomQuickChats", "cqc7")
-        Label14.Text = ReadINI(File, "CustomQuickChats", "cqc8")
         TextBox1.Clear()
         TextBox2.Clear()
         TextBox3.Clear()
@@ -86,6 +78,22 @@ Public Class Form1
         CheckBox6.Checked = False
         CheckBox7.Checked = False
         CheckBox8.Checked = False
+        Label3.Text = ReadINI(File, "CustomQuickChats", "cqc1")
+        Label4.Text = ReadINI(File, "CustomQuickChats", "cqc2")
+        Label7.Text = ReadINI(File, "CustomQuickChats", "cqc3")
+        Label8.Text = ReadINI(File, "CustomQuickChats", "cqc4")
+        Label17.Text = ReadINI(File, "CustomQuickChats", "cqc5")
+        Label18.Text = ReadINI(File, "CustomQuickChats", "cqc6")
+        Label13.Text = ReadINI(File, "CustomQuickChats", "cqc7")
+        Label14.Text = ReadINI(File, "CustomQuickChats", "cqc8")
+        If ReadINI(File, "CustomQuickChats", "cqc1_TeamOnly") = "true" Then CheckBox1.Checked = True
+        If ReadINI(File, "CustomQuickChats", "cqc2_TeamOnly") = "true" Then CheckBox2.Checked = True
+        If ReadINI(File, "CustomQuickChats", "cqc3_TeamOnly") = "true" Then CheckBox3.Checked = True
+        If ReadINI(File, "CustomQuickChats", "cqc4_TeamOnly") = "true" Then CheckBox4.Checked = True
+        If ReadINI(File, "CustomQuickChats", "cqc5_TeamOnly") = "true" Then CheckBox8.Checked = True
+        If ReadINI(File, "CustomQuickChats", "cqc6_TeamOnly") = "true" Then CheckBox7.Checked = True
+        If ReadINI(File, "CustomQuickChats", "cqc7_TeamOnly") = "true" Then CheckBox6.Checked = True
+        If ReadINI(File, "CustomQuickChats", "cqc8_TeamOnly") = "true" Then CheckBox5.Checked = True
         If Not Dir$(TestDir) <> "" Then
             p = Process.GetProcessesByName("customqc")
             If p.Count > 0 Then
