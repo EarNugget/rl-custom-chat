@@ -4,22 +4,22 @@ SendMode Input  ; Recommended for new scripts due to its superior speed and reli
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 SetTitleMatchMode, 3
 Menu, Tray, Tip, RL Custom Quickchat Macro`nCtrl+Shift+q for help
-IniRead, cqc1, resource\customqc.ini, CustomQuickChats, cqc1, %A_Space%
-IniRead, cqc2, resource\customqc.ini, CustomQuickChats, cqc2, %A_Space%
-IniRead, cqc3, resource\customqc.ini, CustomQuickChats, cqc3, %A_Space%
-IniRead, cqc4, resource\customqc.ini, CustomQuickChats, cqc4, %A_Space%
-IniRead, cqc5, resource\customqc.ini, CustomQuickChats, cqc5, %A_Space%
-IniRead, cqc6, resource\customqc.ini, CustomQuickChats, cqc6, %A_Space%
-IniRead, cqc7, resource\customqc.ini, CustomQuickChats, cqc7, %A_Space%
-IniRead, cqc8, resource\customqc.ini, CustomQuickChats, cqc8, %A_Space%
-IniRead, cqc1_TeamOnly, resource\customqc.ini, CustomQuickChats, cqc1_TeamOnly, %A_Space%
-IniRead, cqc2_TeamOnly, resource\customqc.ini, CustomQuickChats, cqc2_TeamOnly, %A_Space%
-IniRead, cqc3_TeamOnly, resource\customqc.ini, CustomQuickChats, cqc3_TeamOnly, %A_Space%
-IniRead, cqc4_TeamOnly, resource\customqc.ini, CustomQuickChats, cqc4_TeamOnly, %A_Space%
-IniRead, cqc5_TeamOnly, resource\customqc.ini, CustomQuickChats, cqc5_TeamOnly, %A_Space%
-IniRead, cqc6_TeamOnly, resource\customqc.ini, CustomQuickChats, cqc6_TeamOnly, %A_Space%
-IniRead, cqc7_TeamOnly, resource\customqc.ini, CustomQuickChats, cqc7_TeamOnly, %A_Space%
-IniRead, cqc8_TeamOnly, resource\customqc.ini, CustomQuickChats, cqc8_TeamOnly, %A_Space%
+IniRead, cqc1, resource\chats.ini, CustomQuickChats, cqc1, %A_Space%
+IniRead, cqc2, resource\chats.ini, CustomQuickChats, cqc2, %A_Space%
+IniRead, cqc3, resource\chats.ini, CustomQuickChats, cqc3, %A_Space%
+IniRead, cqc4, resource\chats.ini, CustomQuickChats, cqc4, %A_Space%
+IniRead, cqc5, resource\chats.ini, CustomQuickChats, cqc5, %A_Space%
+IniRead, cqc6, resource\chats.ini, CustomQuickChats, cqc6, %A_Space%
+IniRead, cqc7, resource\chats.ini, CustomQuickChats, cqc7, %A_Space%
+IniRead, cqc8, resource\chats.ini, CustomQuickChats, cqc8, %A_Space%
+IniRead, cqc1_TeamOnly, resource\chats.ini, CustomQuickChats, cqc1_TeamOnly, %A_Space%
+IniRead, cqc2_TeamOnly, resource\chats.ini, CustomQuickChats, cqc2_TeamOnly, %A_Space%
+IniRead, cqc3_TeamOnly, resource\chats.ini, CustomQuickChats, cqc3_TeamOnly, %A_Space%
+IniRead, cqc4_TeamOnly, resource\chats.ini, CustomQuickChats, cqc4_TeamOnly, %A_Space%
+IniRead, cqc5_TeamOnly, resource\chats.ini, CustomQuickChats, cqc5_TeamOnly, %A_Space%
+IniRead, cqc6_TeamOnly, resource\chats.ini, CustomQuickChats, cqc6_TeamOnly, %A_Space%
+IniRead, cqc7_TeamOnly, resource\chats.ini, CustomQuickChats, cqc7_TeamOnly, %A_Space%
+IniRead, cqc8_TeamOnly, resource\chats.ini, CustomQuickChats, cqc8_TeamOnly, %A_Space%
 CL_file := "customlist_1.txt"
 
 CustomColor := "8c8c8c"
