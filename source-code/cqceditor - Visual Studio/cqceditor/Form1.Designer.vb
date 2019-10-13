@@ -83,7 +83,7 @@ Partial Class Form1
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(147, 23)
         Me.Button1.TabIndex = 17
-        Me.Button1.Text = "Open Randomized Wordlist"
+        Me.Button1.Text = "Open Source Folder"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Label2

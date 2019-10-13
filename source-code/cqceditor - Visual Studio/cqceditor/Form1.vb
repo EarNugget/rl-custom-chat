@@ -1,9 +1,11 @@
-﻿Imports System.Runtime.InteropServices
+﻿Imports System.IO
+Imports System.Runtime.InteropServices
 Imports System.Text
 
 Public Class Form1
     Dim p() As Process
-    Dim File = Environment.CurrentDirectory + "/customqc.ini"
+    Dim File
+    Dim TestDir = Environment.CurrentDirectory + "/chats.ini"
     <DllImport("kernel32.dll", SetLastError:=True)>
     Private Shared Function GetPrivateProfileString(ByVal lpAppName As String, ByVal lpKeyName As String, ByVal lpDefault As String, ByVal lpReturnedString As StringBuilder, ByVal nSize As Integer, ByVal lpFileName As String) As Integer
     End Function
@@ -23,6 +25,11 @@ Public Class Form1
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        If Dir$(TestDir) <> "" Then
+            File = Environment.CurrentDirectory + "/chats.ini"
+        Else
+            File = Environment.CurrentDirectory + "/resource/chats.ini"
+        End If
         If Not TextBox1.Text = "" Then
             WriteINI(File, "CustomQuickChats", "cqc1", TextBox1.Text)
             If Not CheckBox1.Checked = True Then WriteINI(File, "CustomQuickChats", "cqc1_TeamOnly", "false") Else WriteINI(File, "CustomQuickChats", "cqc1_TeamOnly", "true")
@@ -79,17 +86,23 @@ Public Class Form1
         CheckBox6.Checked = False
         CheckBox7.Checked = False
         CheckBox8.Checked = False
-        p = Process.GetProcessesByName("customqc")
-        If p.Count > 0 Then
-            For Each SubProcess As Process In p
-                SubProcess.Kill()
-                SubProcess.WaitForExit()
-                Process.Start("customqc.exe")
-            Next
+        If Not Dir$(TestDir) <> "" Then
+            p = Process.GetProcessesByName("customqc")
+            If p.Count > 0 Then
+                For Each SubProcess As Process In p
+                    SubProcess.Kill()
+                    SubProcess.WaitForExit()
+                    Process.Start(Environment.CurrentDirectory + "/customqc.exe")
+                Next
+            End If
         End If
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Process.Start("wordlist.txt")
+        If Dir$(TestDir) <> "" Then
+            Process.Start(Path.GetFullPath(Path.Combine(Environment.CurrentDirectory, "..\")))
+        Else
+            Process.Start(Environment.CurrentDirectory)
+        End If
     End Sub
 End Class
